@@ -25,10 +25,9 @@ function adderFunc() {
 }
 
 function clearFunc() {
-  alert("Test!");
-  document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].value = "";
-  document.getElementsByName("gFpDPwgZbbLH54HoaR4H")[0].value = "";
-  document.getElementsByName("J6EzsPVs3AVlpxTnhkgC")[0].value = "";
-  document.getElementsByName("Ls19OFmpZFUA32xGoHac")[0].value = "";
-  document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].value = "";
+  document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].value = Number("");
+  document.getElementsByName("gFpDPwgZbbLH54HoaR4H")[0].value = 0;
+  document.getElementsByName("J6EzsPVs3AVlpxTnhkgC")[0].value = 0;
+  document.getElementsByName("Ls19OFmpZFUA32xGoHac")[0].value = 0;
+  document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].value = 0;
 }
