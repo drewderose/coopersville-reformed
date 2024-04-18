@@ -11,5 +11,7 @@ function adderFunc() {
   var total = "$" & monies;
   document.getElementById("total-contribution")[0].innerText = total;
   document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].value = monies;
-  document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].value;
+  document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].dispatchEvent(new Event("input", {
+    bubbles: true
+  }));
 }
