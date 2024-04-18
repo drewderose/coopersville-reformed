@@ -17,7 +17,11 @@ function adderFunc() {
   document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].dispatchEvent(new Event("input", {
     bubbles: true
   }));
-  document.querySelector("input[value='Annually']").style.display = "none";
+  document.querySelector("input[value='Annually']").addEventListener('click', clearFunc);
+  document.querySelector("input[value='Quarterly']").addEventListener('click', clearFunc);
+  document.querySelector("input[value='Monthly']").addEventListener('click', clearFunc);
+  document.querySelector("input[value='Weekly']").addEventListener('click', clearFunc);
+  document.querySelector("input[value='Non-traditional (RMD, Stocks, Bonds, assets, etc.)']").addEventListener('click', clearFunc);
 }
 
 function clearFunc() {
