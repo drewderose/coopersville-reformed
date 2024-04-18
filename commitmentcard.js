@@ -8,7 +8,7 @@ function adderFunc() {
   var random = document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].value;
   var initial = document.getElementsByName("gkRhOZYwm2ZPRYyPmFdq")[0].value;
   var monies = annual + quarter + month + week + random + initial;
-  var total = "$" & monies;
+  var total = "$" + monies;
   document.getElementById("total-contribution").innerText = total;
   document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].value = monies;
   document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].dispatchEvent(new Event("input", {
