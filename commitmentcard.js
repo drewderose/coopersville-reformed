@@ -25,6 +25,7 @@ function adderFunc() {
 }
 
 function clearFunc() {
+  alert("Test!");
   document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].value = "";
   document.getElementsByName("gFpDPwgZbbLH54HoaR4H")[0].value = "";
   document.getElementsByName("J6EzsPVs3AVlpxTnhkgC")[0].value = "";
