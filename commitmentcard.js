@@ -26,9 +26,10 @@ document.querySelector("input[value='Weekly']").addEventListener('click', clearF
 document.querySelector("input[value='Non-traditional (RMD, Stocks, Bonds, assets, etc.)']").addEventListener('click', clearFunc);
 
 function clearFunc() {
-  document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].value = Number("");
-  document.getElementsByName("gFpDPwgZbbLH54HoaR4H")[0].value = 0;
-  document.getElementsByName("J6EzsPVs3AVlpxTnhkgC")[0].value = 0;
-  document.getElementsByName("Ls19OFmpZFUA32xGoHac")[0].value = 0;
-  document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].value = 0;
+  var zero = Number(0);
+  document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].value = zero;
+  document.getElementsByName("gFpDPwgZbbLH54HoaR4H")[0].value = zero;
+  document.getElementsByName("J6EzsPVs3AVlpxTnhkgC")[0].value = zero;
+  document.getElementsByName("Ls19OFmpZFUA32xGoHac")[0].value = zero;
+  document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].value = zero;
 }
