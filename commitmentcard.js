@@ -7,10 +7,13 @@ function adderFunc() {
   var week = Number(document.getElementsByName("Ls19OFmpZFUA32xGoHac")[0].value);
   var random = Number(document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].value);
   var initial = Number(document.getElementsByName("gkRhOZYwm2ZPRYyPmFdq")[0].value);
-  var monies = annual + quarter + month + week + random + initial;
-  var total = "$" + monies;
-  document.getElementById("total-contribution").innerText = total;
-  document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].value = monies;
+  var total = (annual*3) + (quarter*12) + (month*36) + (week*156) + random + initial;
+  let USDollar = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  });
+  document.getElementById("total-contribution").innerText = USDollar.format(total);
+  document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].value = total;
   document.getElementsByName("UyOfXvinODfpfmr42qTP")[0].dispatchEvent(new Event("input", {
     bubbles: true
   }));
