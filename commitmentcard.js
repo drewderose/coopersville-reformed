@@ -28,10 +28,25 @@ function adderFunc() {
 }
 
 function clearFunc() {
-  var zero = Number(0);
-  document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].value = 200;
+  var zero = Number("");
+  document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].value = zero;
+  document.getElementsByName("5urH45uOzZQ5sZfaRC08")[0].dispatchEvent(new Event("input", {
+    bubbles: true
+  }));
   document.getElementsByName("gFpDPwgZbbLH54HoaR4H")[0].value = zero;
+  document.getElementsByName("gFpDPwgZbbLH54HoaR4H")[0].dispatchEvent(new Event("input", {
+    bubbles: true
+  }));
   document.getElementsByName("J6EzsPVs3AVlpxTnhkgC")[0].value = zero;
+  document.getElementsByName("J6EzsPVs3AVlpxTnhkgC")[0].dispatchEvent(new Event("input", {
+    bubbles: true
+  }));
   document.getElementsByName("Ls19OFmpZFUA32xGoHac")[0].value = zero;
+  document.getElementsByName("Ls19OFmpZFUA32xGoHac")[0].dispatchEvent(new Event("input", {
+    bubbles: true
+  }));
   document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].value = zero;
+  document.getElementsByName("ORqwJ5WQRQsRshrAJvkX")[0].dispatchEvent(new Event("input", {
+    bubbles: true
+  }));
 }
